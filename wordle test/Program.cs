@@ -8,44 +8,14 @@
             int randomIndex = random.Next(words.Count);
             return words[randomIndex];
         }
-
-
         public class Wordle
         {
-
-
-            public class Guesses
+            public void Guess(string guess)
             {
-                List<string> Guess = new List<string>();
-
-                public void Guessing(string word)
-                {
-
-                    for (int i = 0; i < word.Length; i++)
-                    {
-                        if (i == 5)
-                        {
-                            if (char.IsLetter(word[i]) == true)
-                            {
-                                Guess.Add(word);
-                                //innen összehasonlitás kéne a random szóval (még egy methódus)
-                            }
-                            else
-                            {
-                                Console.WriteLine("Nem alkalmas szó!");
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Nem alkalmas szó!");
-                        }
-
-                    }
+                int guesses = 0;
 
 
-                }
             }
-
         }
 
         
@@ -61,21 +31,20 @@
                 szavak.Add(szavak_tomb[i]);
             }
 
-            RandomWord(szavak);
+            RandomWord(szavak); // ez vissza adja a random szót de nem írja ki
+
+            
+            
 
 
             /*for (int i = 0; i < 15; i++)
             {
                 Console.WriteLine(szavak[i]); // KÉPES BEOLVASNI SZAVAKAT A WORDS.TXTBÖL
             }
-            */
-
-            //Console.WriteLine(szavak[1][2]);  pl 2. szó 3. betüje
-            /*majd megcsinaljuk hogy random képes legyen kiválasztani egy szót és mentse is el hogy az hányadik szó
-             * azután eltudjuk érni az összes ebtüjét annak a szónak egy for ciklussal,
-             switch case-t fogok majd használni arra hogy megnézze van e olyan betu a szóban és hogy jó helyen van e,
-            azt nem tudom még hogyan fogom megoldani hogy egy betü-t csak egyszer jelöljön ki 
-            (például a szóban van 1 P,mi tippelunk egy 2 P-s szót és erre kijelöli mind a kettőt  vagy sárgának vagy az eggyiket zöldnek)*/
+            */ 
+            /*
+             *jelengleg csak arra képes hogy a words txtböl kiválaszt egy random szót 
+             */
         }
     }
 }
