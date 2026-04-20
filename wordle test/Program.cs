@@ -11,9 +11,9 @@
 
         public class Guesses
         {
-            List<string> guesses = new List<string>();
+            List<string> Guess = new List<string>();
 
-            public static void Guess(string word)
+            public static void Guessing(string word)
             {
 
                 for (int i = 0; i < word.Length; i++)
@@ -22,8 +22,8 @@
                     { 
                         if (char.IsLetter(word[i]) == true)
                         {
-                            Guesses guesses = new Guesses();
-                            guesses.guesses.Add(word);
+                            
+                            
                         }
                         else
                         {
@@ -53,7 +53,7 @@
             }
             */
 
-            Console.WriteLine(szavak[1][2]);
+            //Console.WriteLine(szavak[1][2]);  pl 2. szó 3. betüje
             /*majd megcsinaljuk hogy random képes legyen kiválasztani egy szót és mentse is el hogy az hányadik szó
              * azután eltudjuk érni az összes ebtüjét annak a szónak egy for ciklussal,
              switch case-t fogok majd használni arra hogy megnézze van e olyan betu a szóban és hogy jó helyen van e,
