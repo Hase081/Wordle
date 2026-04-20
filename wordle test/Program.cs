@@ -2,54 +2,71 @@
 {
     internal class Program
     {
+        public static string RandomWord( List<string> words )
+        {
+            Random random = new Random();
+            int randomIndex = random.Next(words.Count);
+            return words[randomIndex];
+        }
+
 
         public class Wordle
         {
 
 
-        }
-
-        public class Guesses
-        {
-            List<string> Guess = new List<string>();
-
-            public static void Guessing(string word)
+            public class Guesses
             {
+                List<string> Guess = new List<string>();
 
-                for (int i = 0; i < word.Length; i++)
+                public void Guessing(string word)
                 {
-                    if (i == 5)
-                    { 
-                        if (char.IsLetter(word[i]) == true)
+
+                    for (int i = 0; i < word.Length; i++)
+                    {
+                        if (i == 5)
                         {
-                            
-                            
+                            if (char.IsLetter(word[i]) == true)
+                            {
+                                Guess.Add(word);
+                                //innen összehasonlitás kéne a random szóval (még egy methódus)
+                            }
+                            else
+                            {
+                                Console.WriteLine("Nem alkalmas szó!");
+                            }
                         }
                         else
                         {
                             Console.WriteLine("Nem alkalmas szó!");
                         }
+
                     }
-                    else
-                    {
-                        Console.WriteLine("Nem alkalmas szó!");
-                    }
+
 
                 }
-
-                
             }
+
         }
+
+        
 
 
         static void Main(string[] args)
         {
-            string[] szavak = File.ReadAllLines("words.txt");
+            List<string> szavak = new List<string>();
+            string[] szavak_tomb = File.ReadAllLines("words.txt");
+
+            for (int i = 0; i < szavak_tomb.Length; i++)
+            {
+                szavak.Add(szavak_tomb[i]);
+            }
+
+            RandomWord(szavak);
 
 
             /*for (int i = 0; i < 15; i++)
             {
-                Console.WriteLine(szavak[i]);  KÉPES BEOLVASNI SZAVAKAT A WORDS.TXTBÖL
+                Console.WriteLine(szavak[i]); // KÉPES BEOLVASNI SZAVAKAT A WORDS.TXTBÖL
             }
             */
 
