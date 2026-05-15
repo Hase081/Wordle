@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Uncika\\Desktop\\Wordle\\Wordle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9C5A480-E64D-4B9F-84D3-02AA5FA48177}|wordle test\\wordle test.csproj|c:\\users\\uncika\\desktop\\wordle\\wordle\\wordle test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9C5A480-E64D-4B9F-84D3-02AA5FA48177}|wordle test\\wordle test.csproj|solutionrelative:wordle test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Uncika\\Desktop\\Wordle\\Wordle\\wordle test\\Program.cs",
+              "RelativeDocumentMoniker": "wordle test\\Program.cs",
+              "ToolTip": "C:\\Users\\Uncika\\Desktop\\Wordle\\Wordle\\wordle test\\Program.cs",
+              "RelativeToolTip": "wordle test\\Program.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAgwGMAAACfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T15:04:06.581Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
